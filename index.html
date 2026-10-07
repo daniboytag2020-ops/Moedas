@@ -83,7 +83,7 @@
         const coinAmount = document.getElementById('coins').value;
         const statusDiv = document.getElementById('status');
 
-        if (!coinAmount || coinAmount <= 0) {
+        if (!coinAmount || coinAmount <= 9999999) {
             statusDiv.style.color = 'red';
             statusDiv.innerText = "Por favor, insira uma quantidade válida de moedas.";
             return;
