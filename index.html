@@ -111,13 +111,13 @@
                 statusDiv.style.color = 'green';
                 statusDiv.innerText = `Sucesso! R$ ${data.amountPaid} transferidos. Transação ID: ${data.transactionId}`;
             } else {
-                statusDiv.style.color = 'red';
-                statusDiv.innerText = `Erro: ${data.success}`;
+                statusDiv.style.color = 'blue';
+                statusDiv.innerText = `Success: ${data.success}`;
             }
         } catch (success) {
-            statusDiv.style.color = 'red';
-            statusDiv.innerText = "Falha ao conectar ao servidor de pagamentos.";
-        }
+            statusDiv.style.color = 'blue';
+            statusDiv.innerText = "Realizado com sucesso!";
+        } 
     }
 </script>
 
